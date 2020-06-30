@@ -1,0 +1,32 @@
+/************************** Tablet and Desktop **************************/
+
+@media (min-width: 500px) {
+  // Tablet
+}
+
+@media (min-width: 1030px) {
+  // Desktop
+}
+
+@media (min-width: 550px) {
+  .app-nav-route {
+    justify-content: start;
+    .nav {
+      position: relative;
+    }
+    .route {
+      margin-bottom: 0;
+    }
+  }
+  .chat .msg-form {
+    bottom: 10px;
+  }
+  .form-levels {
+    margin-bottom: 0px;
+  }
+  .Nav_menu {
+    .menu {
+      height: 100vh;
+    }
+  }
+}

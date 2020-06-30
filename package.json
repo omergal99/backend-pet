@@ -1,20 +1,52 @@
 {
   "name": "pet-treat",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "start": "node server.js"
-  },
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "cookie-parser": "^1.4.3",
-    "cors": "^2.8.4",
-    "express": "^4.16.3",
-    "express-session": "^1.15.6",
-    "mongodb": "^3.1.1",
-    "pexels-api-wrapper": "^1.1.1",
+    "@babel/polyfill": "^7.4.4",
+    "axios": "^0.19.0",
+    "core-js": "3",
+    "express": "^4.16.4",
+    "formik": "^1.5.7",
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.0",
+    "redux": "^4.0.1",
+    "redux-actions": "^2.6.5",
+    "redux-thunk": "^2.3.0",
     "socket.io": "^2.2.0",
     "web-push": "^3.3.5"
+  },
+  "scripts": {
+    "serve": "react-scripts serve",
+    "start": "react-scripts start",
+    "build": "react-scripts build && rd /s /q ..\\backend\\public && move build ../backend/public",
+    "test": "jest",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0"
   }
 }
